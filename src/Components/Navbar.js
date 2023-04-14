@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const changeBackground = () => {
@@ -11,9 +10,9 @@ const Navbar = () => {
       setNav(false);
     }
   };
-  window.addEventListener('scroll',changeBackground);
+  window.addEventListener("scroll", changeBackground);
   return (
-    <nav className={nav ? 'nav active' : 'nav'}>
+    <nav className={nav ? "nav active" : "nav"}>
       <a href="#" className="logo">
         <img src={logo} alt="" />
       </a>
@@ -23,7 +22,9 @@ const Navbar = () => {
       </label>
       <ul className="menu">
         <li>
-          <a href="#" className="active">Home</a>
+          <a href="#" className="active">
+            Home
+          </a>
         </li>
         <li>
           <a href="#">Features</a>

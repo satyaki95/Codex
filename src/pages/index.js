@@ -1,5 +1,5 @@
-import * as React from "react"
-import Header from "../Components/Header"
+import * as React from "react";
+import Header from "../Components/Header";
 import "../style.css";
 import Feature from "../Components/Feature";
 import About from "../Components/About";
@@ -13,10 +13,18 @@ export default function Home() {
     <div className="home">
       <Header />
       <Feature />
-      <About image={aboutimage} title="Comes with all you Need For Daily Life" button="Get The App" />
+      <About
+        image={aboutimage}
+        title="Comes with all you Need For Daily Life"
+        button="Get The App"
+      />
       <Presentation />
-      <About image={aboutimage1} title="Download And Get The App Now" button="Download" />
+      <About
+        image={aboutimage1}
+        title="Download And Get The App Now"
+        button="Download"
+      />
       <Contact />
     </div>
-  )
+  );
 }
